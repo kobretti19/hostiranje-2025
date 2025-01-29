@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
 const Header = ({ title, proffesion }) => {
   return (
-    <div className="flex flex-row justify-between m-10 p-12 rounded-xl h-[180px] bg-blue-500 text-white uppercase">
-      <div className="flex flex-col gap-4">
-        <h2 className="text-4xl">{title}</h2>
-        <p>{proffesion}</p>
+    <div className="flex flex-row justify-between w-full   p-[6%] xs:p-[2%]  h-[180px] bg-[#252E3E] text-white uppercase ">
+      <div className="flex flex-col gap-4 justify-center ">
+        <p className="text-xl 2xl:text-4xl md:text-3xl xs:text-xs">{title}</p>
+        <p className="text-xs 2xl:text-lg md:text-xl text-[#AA9260]">
+          {proffesion}
+        </p>
       </div>
-      <div className="flex flex-col gap-4 justify-center">
+      <div className="flex flex-col gap-4 justify-center text-xs 2xl:text-lg md:text-xl">
         <div>
           <p>Eigerweg 5</p>
           <p>3177, Laupen BE</p>
