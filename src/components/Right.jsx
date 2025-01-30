@@ -14,7 +14,7 @@ const Right = () => {
         WORK EXPERIENCE
       </p>
       <div className="flex flex-row">
-        <div className="flex flex-col justify-between w-1/3">
+        <div className="flex flex-col justify-around w-1/3 py-6">
           {EXPIRIENCE.map((job, index) => (
             <ol key={index}>
               <li>{job.employer}</li>
@@ -23,8 +23,9 @@ const Right = () => {
         </div>
         <div className="w-2/3">
           {EXPIRIENCE.map((job, index) => (
-            <ol key={index} className="flex flex-col">
+            <ol key={index} className="flex flex-col gap-10 py-10">
               <li>{job.description}</li>
+              <li className="h-0.5 bg-black"></li>
             </ol>
           ))}
         </div>
